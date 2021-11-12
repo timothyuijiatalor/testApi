@@ -1,0 +1,27 @@
+{
+    "root": true,
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "plugins": [
+      "import",
+      "prettier",
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "airbnb-typescript/base",
+      "prettier"
+    ],
+    "parserOptions": {
+      "project": [
+        "tsconfig.json",
+        "scripts/tsconfig.json"
+      ],
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  }
